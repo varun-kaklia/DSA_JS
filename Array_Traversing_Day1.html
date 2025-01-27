@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Traversing</title>
+    <script>
+        let data =[9,4,3,88,23,37,92,21,26,35,79];
+        function getElement(){
+            let element= parseInt(document.getElementById("arrayElement").value);
+            if(isNaN(element) || element < 0){ 
+                alert(`Please enter a non-negative integer between 0 and ${data.length - 1}`);
+            } else if(element >= data.length){
+                alert(`Please enter a number between 0 and ${data.length - 1}`);
+            } else {
+                alert(`Array value: ${data[element]}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="arrayElement"/>
+    <button onclick="getElement()">Get Array Element</button>
+</body>
+</html>
