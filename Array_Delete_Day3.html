@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Array Element</title>
+    <script>
+        function removElement(){
+            let data = [32,54,89,1324,542,98,456]
+            let position = document.getElementById("position").value;
+            position = parseInt(position)
+            console.log("Array before removing value: ",data)
+            if(typeof(position)!=="number"){
+                alert(`Please Enter number between 0 to ${data.length}`);
+            }else{
+                for(let i=position;i<data.length-1;i++){
+                    data[i]=data[i+1];
+                }
+                data.length=data.length-1;
+                console.log("Array after removing value: ",data)
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="Enter position"/>
+    <button onclick="removElement()">Remove Element</button>
+</body>
+</html>
