@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inserting Array</title>
+    <script>
+      function addElement() {
+        let data = [37, 92, 21, 26, 35, 79];
+        let newElement = document.getElementById("newElement").value;
+        newElement = parseInt(newElement);
+        let position = document.getElementById("position").value;
+        console.warn("Array before operations", data);
+
+        if(position>data?.length){
+            return alert(`Position should be less then ${data.length}.`);
+        }else{
+            for (let i = data.length - 1; i >= 0; i--) {
+              if (i >= position) {
+                data[i + 1] = data[i];
+                if (i==position) {
+                  data[i] = newElement;
+                }
+              }
+            }
+
+            console.warn("Array after operations", data);
+        }    
+      }
+
+    </script>
+  </head>
+  <body>
+      <input type="text" id="position" />
+    <input type="text" id="newElement" />
+    <button onclick="addElement()">Add Element in Array</button>
+  </body>
+</html>
