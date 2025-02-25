@@ -1,0 +1,6 @@
+Day2- Adding Element in an array
+https://www.programiz.com/online-compiler/03a6wYfRwJCtU
+https://www.programiz.com/online-compiler/9MLwpNfdZnBbk
+
+Day3 - Removing Element from an array
+https://www.programiz.com/online-compiler/3c2i0LrYNgxFQ
