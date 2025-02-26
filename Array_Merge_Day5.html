@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Merge Day 5</title>
+    <script>
+        // method1
+        // let data1 = [1,2,5,3,6,87,23,643,523,90]
+        // let data2 = [7,3,63,53,9]
+        // let data3=[];
+        // for(let i=0;i<data1.length;i++){
+        //     data3[i] = data1[i]
+        // }
+        // for(let i=0;i<data2.length;i++){
+        //     data3[data1.length+i] = data2[i]
+        // }
+        // console.log("New Data 3:",data3);
+        
+        // method2
+        let data1 = [1,2,5,3,6,87,23,643,523,90]
+        let data2 = [7,3,63,53,9]
+        let data3=[...data1,...data2];
+        console.log("New Data 3:",data3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
